@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Jogos Favoritos</title>
+    <style>
+        /* Estilo geral do body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* centraliza todo o conteúdo por padrão */
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: blueviolet;
+            color: antiquewhite;
+            padding: 25px;
+            font-size: 36px;
+            font-weight: bold;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        /* Galeria centralizada */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Cada jogo */
+        .jogo {
+            background-color: aliceblue;
+            width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Imagem do jogo */
+        .jogo img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        /* Hover - animação suave */
+        .jogo:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .jogo:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Títulos e parágrafos */
+        .jogo h2 {
+            margin: 10px 0 10px 0;
+            font-size: 24px;
+        }
+
+        .jogo p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .jogo {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Meus Jogos Favoritos</header>
+
+    <main class="galeria">
+        <div class="jogo">
+            <img src="xadrez.png" alt="Tabuleiro de xadrez">
+            <h2>Xadrez</h2>
+            <p>O xadrez é um jogo de tabuleiro estratégico jogado entre duas pessoas. Ele é um dos jogos mais antigos e populares do mundo, combinando tática, estratégia e raciocínio lógico.</p>
+        </div>
+
+        <div class="jogo">
+            <img src="csgo.png" alt="CS:GO">
+            <h2>Counter-Strike 2</h2>
+            <p>Counter-Strike é uma série de jogos de tiro em primeira pessoa (FPS) criada pela Valve. Nela, dois times se enfrentam: Terroristas (T) e Contraterroristas (CT). O objetivo depende do modo de jogo — plantar/desarmar bombas ou resgatar reféns.</p>
+        </div>
+
+        <div class="jogo">
+            <img src="clash.jpg" alt="Clash of Clans">
+            <h2>Clash of Clans</h2>
+            <p>Clash of Clans é um jogo de estratégia em tempo real para dispositivos móveis, onde o jogador constrói e desenvolve uma vila, treina tropas e ataca outras vilas para obter recursos. Também é possível participar de clãs, colaborar com outros jogadores e disputar guerras em equipe.</p>
+        </div>
+
+        <div class="jogo">
+            <img src="mortal.jpg" alt="Mortal Kombat Shaolin Monks">
+            <h2>Mortal Kombat Shaolin Monks</h2>
+            <p>No jogo, você controla os personagens Liu Kang ou Kung Lao, lutando contra inimigos em cenários variados enquanto avança pela história da série. Ele combina combate corpo a corpo, habilidades especiais e exploração de fases, incluindo chefes clássicos de Mortal Kombat, em uma experiência que mistura beat ‘em up e elementos de aventura.</p>
+        </div>
+    </main>
+</body>
+</html>

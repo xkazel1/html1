@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Carros</title>
+    <style>
+        /* Estilo geral do body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* centraliza todo o conteúdo por padrão */
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: blueviolet;
+            color: antiquewhite;
+            padding: 25px;
+            font-size: 36px;
+            font-weight: bold;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        /* Galeria centralizada */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Cada jogo */
+        .jogo {
+            background-color: aliceblue;
+            width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Imagem do jogo */
+        .jogo img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        /* Hover - animação suave */
+        .jogo:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .jogo:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Títulos e parágrafos */
+        .jogo h2 {
+            margin: 10px 0 10px 0;
+            font-size: 24px;
+        }
+
+        .jogo p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .jogo {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Lista de</header>
+
+    <main class="galeria">
+        <div class="jogo">
+            <img src="aventador.jpg" alt="lamburguine aventador">
+            <h2>Avenator</h2>
+            <p>O Lamborghini Aventador é um superesportivo icônico da marca italiana, lançado em 2011 como sucessor do Murciélago. Com seu design agressivo e motor V12, o Aventador rapidamente se tornou um símbolo de desempenho e exclusividade.</p>
+        </div>
+
+        <div class="jogo">
+            <img src="cyber truck.webp" alt="Tesla Cyber Truck">
+            <h2>Tesla Cyber Truck</h2>
+            <p>O Cybertruck é a primeira picape totalmente elétrica da Tesla, anunciada em 2019 e lançada oficialmente em novembro de 2023. Com um design futurista em aço inoxidável e linhas angulares, o veículo se destaca no mercado de picapes elétricas.</p>
+        </div>
+
+        <div class="jogo">
+            <img src="nissan skyline.jpg" alt="nissan skyline brian">
+            <h2>Nissan skyline Brian</h2>
+            <p>O carro é um Nissan Skyline GT-R R34, uma das versões mais famosas do Skyline, lançado originalmente no Japão em 1999. Brian O’Conner, personagem interpretado por Paul Walker, usa esse carro principalmente nos primeiros filmes da franquia.</p>
+        </div>
+
+        <div class="jogo">
+            <img src="uno.jpg" alt="Uno com escada">
+            <h2>Uno com escada</h2>
+            <p>O Uno começa como o carro compacto que todos conhecem, mas com uma escada presa ao teto. Com a “transformação”, ele se torna uma versão gigantesca e reforçada do próprio Uno: a carroceria mantém suas linhas originais, mas ganha painéis metálicos reforçados, rodas mais largas e suspensão elevada para suportar o tamanho maior.</p>
+        </div>
+    </main>
+</body>
+</html>
